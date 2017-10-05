@@ -902,6 +902,14 @@ This is useful for debug/testing purposes or exporting forms to JSON.
 By default this property is false.
 |Boolean
 |Config Property
+|`scout.tiles.maxConcurrentDataLoadThreads`
+|Maximum number of threads per server that can be created to load tiles. The default value is 25.
+|Integer >= 0
+|Config Property
+|`scout.tiles.dataLoadQueueTimeoutSeconds`
+|Maximum number of seconds a tile load job can execute until it is automatically cancelled. The default value is 2 minutes.
+|Integer >= 0
+|Config Property
 |`scout.ui.backgroundPollingMaxWaitTime`
 |The polling request (which waits for a background job to complete) stays open until a background job has completed or the specified number of seconds elapsed.
 
